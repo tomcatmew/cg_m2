@@ -1,0 +1,100 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title id="title">Yifei Chen</title>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/three@0.101.1/build/three.min.js"></script>
+    <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/945200/OrbitControls.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.101.1/examples/js/loaders/GLTFLoader.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.101.1/examples/js/modifiers/SimplifyModifier.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/three@0.140.2/examples/jsm/loaders/GLTFLoader.min.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/lil-gui@0.16"></script>
+    <script src="https://cdn.jsdelivr.net/npm/dat.gui@0.7.9/build/dat.gui.min.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="section">
+        <div class="top_navbar">
+          <div class="hamburger">
+            <a href="#">
+              <i class="fas fa-bars"></i>
+            </a>
+          </div>
+        </div>
+        <div class="container" id="maincanvas"></div>
+      </div>
+      <div class="sidebar">
+        <div class="profile">
+          <h3>Yifei Chen</h3>
+          <p>University of Tokyo</p>
+          <p>CG homework M1</p>
+          <p>基本課題M1</p>
+        </div>
+        <ul>
+          <li>
+            <a href="index.html">
+              <span class="icon"><i class="fas fa-home"></i></span>
+              <span class="item">Introduction</span>
+            </a>
+          </li>
+          <li>
+            <a href="subdivide.html" class="active">
+              <span class="icon"><i class="fas fa-bezier-curve"></i></span>
+              <span class="item">Bezier Curve</span>
+            </a>
+          </li>
+          <li>
+            <a href="adaptive.html">
+              <span class="icon"><i class="fas fa-vector-square"></i></span>
+              <span class="item">Adaptive Bezier</span>
+            </a>
+          </li>
+          <li>
+            <a href="3Dbezier.html">
+              <span class="icon"><i class="fas fa-cube"></i></span>
+              <span class="item">3D Bezier Curve</span>
+            </a>
+          </li>
+          <li>
+            <a href="catmull.html">
+              <span class="icon"><i class="fas fa-bezier-curve"></i></span>
+              <span class="item">Catmull-Rom</span>
+            </a>
+          </li>
+          <!-- <li>
+            <a href="#">
+              <span class="icon"><i class="fas fa-bezier-curve"></i></span>
+              <span class="item">B-Spline</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span class="icon"><i class="fas fa-bezier-curve"></i></span>
+              <span class="item">K-curves</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span class="icon"><i class="fas fa-bezier-curve"></i></span>
+              <span class="item">C<sup>2</sup> Splines</span>
+            </a>
+          </li> -->
+        </ul>
+        <div class="profile">
+          <h3></h3>
+          <p>
+          </p>
+        </div>
+      </div>
+
+    </div>
+
+    <script src="subdivide.js" defer></script>
+  </body>
+</html>

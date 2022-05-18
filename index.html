@@ -1,0 +1,162 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title id="title">Yifei Chen</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/945200/OrbitControls.js"></script>
+    <script src="https://cdn.rawgit.com/mrdoob/three.js/a1fb0b5b/examples/js/controls/DragControls.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/three@0.140.2/examples/jsm/loaders/GLTFLoader.min.js"></script> -->
+    <script src="https://cdn.rawgit.com/mrdoob/three.js/a1fb0b5b/examples/js/loaders/GLTFLoader.js"></script>
+
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="section">
+        <div class="top_navbar">
+          <div class="hamburger">
+            <a href="#">
+              <i class="fas fa-bars"></i>
+            </a>
+          </div>
+        </div>
+        <div class="container" id="maincanvas">
+          <h1>Introduction</h1>
+          <p>
+            This is my assignment page for course S1S2-0510029 computer graphics
+            in University of Tokyo.
+          </p>
+          <p>
+            My page contains various three.js implementation of different
+            parametric curve methods including Bezier curve, Catmull-Rom,
+            B-Spline, K-Curve and C<sup>2</sup> splines.
+          </p>
+          <p>
+            No built-in function is called. All parametric curves are
+            implemented by myself using the mathematic formulas.
+          </p>
+          <p>
+            You can switch the tab by clicking the button on the left sidebar.
+          </p>
+          <p>
+            <b>
+              <a href="https://github.com/tomcatmew/cg_m1"
+                >Github Source Code</a
+              ></b
+            >
+          </p>
+          <br />
+          <p>
+            このページは、東京大学S1S2-0510029コンピュータグラフィックスコースの私の課題ページです。
+          </p>
+
+          <p>
+            Bezier curve, Catmull-Rom, B-Spline, K-Curve and C<sup>2</sup>
+            splines.などのパラメトリック曲線のthree.jsの実装を紹介しています。
+          </p>
+
+          <p>
+            ビルトイン関数は呼び出されていません。すべてのパラメトリック曲線は、数学的な数式を使って私自身が実装したものである。
+          </p>
+
+          <p>
+            左サイドバーのボタンをクリックすると、タブを切り替えることができます。
+          </p>
+          <p>
+            <b>
+              <a href="https://github.com/tomcatmew/cg_m1"
+                >ソースコード こちら</a
+              >
+            </b>
+          </p>
+          <br />
+          <br />
+          <h1>説明-考察-感想</h1>
+          <br />
+          <p>左サイドバーをクリックすると、私の実装を見ることができます。</p>
+          <p>
+            等長セグメント(同じサンプル距離)でベジェ曲線を作るために、Loop-Up-Tableを使って等長セグメントのおおよその時間スケールを求めました。
+          </p>
+          <p>
+            同じサンプル距離の点を繰り返し、近傍の点を見つけ、「Loop-Up-Table」を使ってt値をremapする。
+          </p>
+          <p>
+            重要なのは、t値更新中にオリジナルt値テーブルを変更してはいけないということです。そのため、更新時にt値テーブルをコピーする必要があります。
+          </p>
+          <p class="cp-text">
+            © Copyright 2022 Yifei Chen - University of Tokyo
+          </p>
+        </div>
+      </div>
+      <div class="sidebar">
+        <div class="profile">
+          <h3>Yifei Chen</h3>
+          <p>University of Tokyo</p>
+          <p>CG homework M1</p>
+          <p>基本課題M1</p>
+        </div>
+        <ul>
+          <li>
+            <a href="subdivide.html" class="active">
+              <span class="icon"><i class="fas fa-home"></i></span>
+              <span class="item">Introduction</span>
+            </a>
+          </li>
+          <li>
+            <a href="bezier.html">
+              <span class="icon"><i class="fas fa-bezier-curve"></i></span>
+              <span class="item">Bezier Curve</span>
+            </a>
+          </li>
+          <li>
+            <a href="adaptive.html">
+              <span class="icon"><i class="fas fa-vector-square"></i></span>
+              <span class="item">Adaptive Bezier</span>
+            </a>
+          </li>
+          <li>
+            <a href="3Dbezier.html">
+              <span class="icon"><i class="fas fa-cube"></i></span>
+              <span class="item">3D Bezier Curve</span>
+            </a>
+          </li>
+          <li>
+            <a href="catmull.html">
+              <span class="icon"><i class="fas fa-bezier-curve"></i></span>
+              <span class="item">Catmull-Rom</span>
+            </a>
+          </li>
+          <!-- <li>
+            <a href="#">
+              <span class="icon"><i class="fas fa-bezier-curve"></i></span>
+              <span class="item">B-Spline</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span class="icon"><i class="fas fa-bezier-curve"></i></span>
+              <span class="item">K-curves</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span class="icon"><i class="fas fa-bezier-curve"></i></span>
+              <span class="item">C<sup>2</sup> Splines</span>
+            </a>
+          </li> -->
+        </ul>
+        <div class="profile">
+          <h3></h3>
+          <p></p>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js" defer></script>
+  </body>
+</html>
