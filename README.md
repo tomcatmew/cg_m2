@@ -1,4 +1,4 @@
-# Computer_Graphics_M1
+# Computer_Graphics_M2
 コンピュータグラフィクス論発展課題M2  Computer Graphics homework 2\
 Author : Yifei Chen - University of Tokyo, Creative Informatics
 
